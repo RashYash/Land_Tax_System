@@ -1,0 +1,16 @@
+{
+  "type": "Feature",
+  "properties": { "name": "Western Province" },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [79.7, 6.8],
+        [80.1, 6.8],
+        [80.1, 7.3],
+        [79.7, 7.3],
+        [79.7, 6.8]
+      ]
+    ]
+  }
+}
