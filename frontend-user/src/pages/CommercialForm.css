@@ -1,0 +1,242 @@
+/* Full-page background */
+.commercial-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("../assets/03.png") no-repeat center center/cover;
+  padding: 2rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Glass-effect form card with scrollable content */
+.commercial-card {
+  background: rgba(139, 69, 19, 0.15); /* Darker orange tint */
+  backdrop-filter: blur(18px) saturate(180%);
+  -webkit-backdrop-filter: blur(18px) saturate(180%);
+  border-radius: 2rem;
+  border: 1px solid rgba(139, 69, 19, 0.25);
+  width: 100%;
+  max-width: 500px;
+  max-height: 600px;
+  overflow-y: auto;
+  box-shadow: 0 12px 40px rgba(0,0,0,0.25);
+  color: #fff;
+  text-align: center;
+  transition: transform 0.3s ease;
+  padding: 3rem 2.5rem;
+}
+
+.commercial-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Scrollbar customization */
+.commercial-card::-webkit-scrollbar {
+  width: 8px;
+}
+.commercial-card::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 140, 0, 0.5); /* Dark orange thumb */
+  border-radius: 4px;
+}
+.commercial-card::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Title */
+.commercial-card h1 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  text-shadow: 0 4px 10px rgba(0,0,0,0.4);
+}
+
+/* Description text */
+.commercial-card p {
+  margin-bottom: 2rem;
+  color: #f0f0f0;
+  line-height: 1.6rem;
+  font-size: 0.95rem;
+}
+
+/* Progress Bar Container */
+.commercial-progress-container {
+  width: 100%;
+  height: 10px;
+  background: rgba(255,255,255,0.2);
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+  overflow: hidden;
+}
+
+/* Progress Bar Fill */
+.commercial-progress-bar {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(135deg,#e65100, #ef6c00); /* Dark orange gradient */
+  border-radius: 12px;
+  transition: width 0.4s ease-in-out;
+}
+
+/* Form layout */
+.commercial-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Labels */
+.commercial-card label {
+  font-size: 0.95rem;
+  color: #f0f0f0;
+  margin-bottom: 0.3rem;
+  display: block;
+  text-align: left;
+  font-weight: 500;
+}
+
+/* Range sliders */
+.commercial-card input[type="range"] {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 12px;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.3);
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.commercial-card input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #e65100; /* Dark orange */
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+  transition: all 0.3s;
+}
+
+.commercial-card input[type="range"]::-webkit-slider-thumb:hover {
+  background: #ef6c00;
+}
+
+.commercial-card input[type="range"]::-moz-range-thumb {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #e65100;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+  transition: all 0.3s;
+}
+
+.commercial-card input[type="range"]::-moz-range-thumb:hover {
+  background: #ef6c00;
+}
+
+/* Inputs & Dropdowns */
+.commercial-card input[type="number"],
+.commercial-card input[type="text"],
+.commercial-card select {
+  padding: 0.9rem 1.2rem;
+  border-radius: 1.2rem;
+  border: 1px solid rgba(255,255,255,0.5);
+  background: rgba(255, 235, 205, 0.12); /* Light dark-orange tint */
+  color: #fff;
+  outline: none;
+  font-size: 0.95rem;
+  transition: all 0.3s;
+}
+
+/* Placeholder */
+.commercial-card input::placeholder,
+.commercial-card select::placeholder {
+  color: #eee;
+}
+
+/* Focus */
+.commercial-card input:focus,
+.commercial-card select:focus {
+  border-color: #ff8f00;
+  box-shadow: 0 0 12px rgba(255, 111, 0, 0.5);
+}
+
+/* Dropdown options text */
+.commercial-card select option {
+  color: #000;
+  background: #fff;
+}
+
+/* Usage cards */
+.commercial-usage-cards,
+.commercial-accessibility-cards {
+  display: flex;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+
+.commercial-usage-card,
+.commercial-accessibility-card {
+  padding: 0.8rem 1rem;
+  border-radius: 1rem;
+  background: rgba(255, 140, 0, 0.12);
+  border: 1px solid rgba(255, 140, 0, 0.3);
+  cursor: pointer;
+  color: #fff;
+  transition: all 0.3s;
+  font-size: 0.9rem;
+  text-align: center;
+  min-width: 100px;
+}
+
+.commercial-usage-card:hover,
+.commercial-accessibility-card:hover {
+  background: rgba(230, 81, 0, 0.3); /* Dark orange hover */
+  border-color: rgba(230, 81, 0, 0.8);
+}
+
+.commercial-usage-card.selected,
+.commercial-accessibility-card.selected {
+  background: rgba(230, 81, 0, 0.8);
+  border-color: #e65100;
+}
+
+/* Submit Button */
+.commercial-button {
+  padding: 0.9rem 1.5rem;
+  border: none;
+  border-radius: 1.5rem;
+  font-weight: 700;
+  cursor: pointer;
+  background: linear-gradient(135deg, rgba(230, 81, 0,0.85), rgba(239, 108, 0,0.85)); /* Dark orange gradient */
+  color: #000;
+  font-size: 1rem;
+  transition: all 0.4s;
+  margin-top: 0.5rem;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+}
+
+.commercial-button:hover {
+  background: linear-gradient(135deg, #e65100, #ef6c00);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.35);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .commercial-card {
+    max-height: 650px;
+    padding: 2rem;
+  }
+  .commercial-card h1 {
+    font-size: 1.6rem;
+  }
+  .commercial-usage-card,
+  .commercial-accessibility-card {
+    min-width: 70px;
+    font-size: 0.85rem;
+  }
+}

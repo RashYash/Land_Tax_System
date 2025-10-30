@@ -1,0 +1,285 @@
+/* Full-page background */
+.agri-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("../assets/d.png") no-repeat center center/cover;
+  padding: 2rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Glass-effect form card with scrollable content */
+.agri-card {
+  background: rgba(3, 42, 44, 0.25); /* Darker glass effect */
+  backdrop-filter: blur(18px) saturate(180%);
+  -webkit-backdrop-filter: blur(18px) saturate(180%);
+  border-radius: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  width: 100%;
+  max-width: 500px;
+  height: 600px; /* Increased height for better initial visibility */
+  overflow-y: auto; /* Scrollbar appears when content overflows */
+  box-shadow: 0 12px 40px rgba(30, 165, 143, 0.35);
+  color: #fff;
+  text-align: center;
+  transition: transform 0.3s ease;
+  padding: 3rem 2.5rem;
+}
+
+.agri-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Custom Scrollbar */
+.agri-card::-webkit-scrollbar {
+  width: 10px;
+}
+
+.agri-card::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  border: 2px solid rgba(3, 42, 44, 0.25);
+}
+
+.agri-card::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+}
+
+/* Firefox scrollbar */
+.agri-card {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255,255,255,0.5) rgba(255,255,255,0.1);
+}
+
+/* Title */
+.agri-card h1 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  text-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+/* Description text */
+.agri-card p {
+  margin-bottom: 2rem;
+  color: #f0f0f0;
+  line-height: 1.6rem;
+  font-size: 0.95rem;
+}
+
+/* Progress Bar Container */
+.agri-progress-container {
+  width: 100%;
+  height: 10px;
+  background: rgba(255,255,255,0.2);
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+  overflow: hidden;
+}
+
+/* Progress Bar Fill */
+.agri-progress-bar {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(135deg, #4caf50, #81c784);
+  border-radius: 12px;
+  transition: width 0.4s ease-in-out;
+}
+
+/* Form layout */
+.agri-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Labels */
+.agri-card label {
+  font-size: 0.95rem;
+  color: #f0f0f0;
+  margin-bottom: 0.3rem;
+  display: block;
+  text-align: left;
+  font-weight: 500;
+}
+
+/* Range sliders */
+.agri-card input[type="range"] {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 12px;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.2);
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.agri-card input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #4caf50;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+  transition: all 0.3s;
+}
+
+.agri-card input[type="range"]::-webkit-slider-thumb:hover {
+  background: #66bb6a;
+}
+
+.agri-card input[type="range"]::-moz-range-thumb {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #4caf50;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+  transition: all 0.3s;
+}
+
+.agri-card input[type="range"]::-moz-range-thumb:hover {
+  background: #66bb6a;
+}
+
+/* Inputs & Dropdowns */
+.agri-card input[type="number"],
+.agri-card input[type="text"],
+.agri-card select {
+  padding: 0.9rem 1.2rem;
+  border-radius: 1.2rem;
+  border: 1px solid rgba(255,255,255,0.3);
+  background: rgba(255,255,255,0.12);
+  color: #fff;
+  outline: none;
+  font-size: 0.95rem;
+  transition: all 0.3s;
+}
+
+.agri-card input::placeholder,
+.agri-card select::placeholder {
+  color: #eee;
+}
+
+.agri-card input:focus,
+.agri-card select:focus {
+  border-color: #ffffff;
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.5);
+}
+
+/* Dropdown options text */
+.agri-card select option {
+  color: #000;
+  background: #fff;
+}
+
+/* Usage & Accessibility Cards */
+.agri-usage-cards,
+.agri-accessibility-cards {
+  display: flex;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+
+.agri-usage-card,
+.agri-accessibility-card {
+  padding: 0.8rem 1rem;
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+  color: #fff;
+  transition: all 0.3s;
+  font-size: 0.9rem;
+  text-align: center;
+  min-width: 100px;
+}
+
+/* Hover effect for both usage and accessibility cards */
+.agri-usage-card:hover,
+.agri-accessibility-card:hover {
+  background: rgba(76, 175, 80, 0.3);
+  border-color: rgba(76, 175, 80, 0.8);
+}
+
+/* Selected state for both usage and accessibility cards */
+.agri-usage-card.selected,
+.agri-accessibility-card.selected {
+  background: rgba(76, 175, 80, 0.8);
+  border-color: #4caf50;
+}
+
+/* Submit Button */
+.agri-button {
+  padding: 0.9rem 1.5rem;
+  border: none;
+  border-radius: 1.5rem;
+  font-weight: 700;
+  cursor: pointer;
+  background: linear-gradient(135deg, rgba(76, 175, 80,0.85), rgba(129, 199, 132,0.85));
+  color: white;
+  font-size: 1rem;
+  transition: all 0.4s;
+  margin-top: 0.5rem;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+}
+
+.agri-button:hover {
+  background: linear-gradient(135deg, #4caf50, #81c784);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.35);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .agri-card {
+    height: 650px; /* Mobile-friendly height */
+    padding: 2rem;
+  }
+  .agri-card h1 {
+    font-size: 1.6rem;
+  }
+  .agri-usage-card,
+  .agri-accessibility-card {
+    min-width: 70px;
+    font-size: 0.85rem;
+  }
+}
+.prediction-card {
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #053120, #1a7720);
+  color: white;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  animation: slideIn 0.5s ease-out;
+}
+
+.prediction-card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.prediction-card .tax-amount {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* Slide-in animation */
+@keyframes slideIn {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+
+
+
+
+
+

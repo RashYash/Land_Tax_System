@@ -1,0 +1,107 @@
+.about-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+}
+
+.about-header {
+  background-color: white;
+  width: 100%;
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-header-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.emblem {
+  height: 2.5rem;
+  object-fit: contain;
+}
+
+.header-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2b2e83;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.header-subtitle {
+  font-size: 1.25rem;
+  color: #2b2e83;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+.about-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1rem;
+  flex: 1;
+  width: 100%;
+}
+
+.about-intro {
+  max-width: 768px;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.about-intro p {
+  font-size: 1rem;
+  color: #4b5563;
+  text-align: justify;
+}
+
+.about-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 768px;
+  margin-top: 1rem;
+}
+
+.about-card {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.card-icon {
+  flex-shrink: 0;
+  width: 5rem;
+  height: 5rem;
+  background-color: #e5e7eb;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-svg {
+  width: 2.5rem;
+  height: 2.5rem;
+  color: #9ca3af;
+}
+
+.card-text {
+  font-size: 0.75rem;
+  color: #374151;
+  text-align: left;
+}

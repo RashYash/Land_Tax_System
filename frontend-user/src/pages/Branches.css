@@ -1,0 +1,112 @@
+.branches-page {
+  background-color: #ffffff;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Search bar container */
+.search-bar {
+  background-color: #2b2e83;
+  height: 5rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.search-wrapper {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.search-input {
+  border: none;
+  border-radius: 0.375rem;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.875rem;
+  outline-offset: 2px;
+}
+
+.search-input:focus {
+  outline: 2px solid #2b2e83;
+}
+
+.search-button {
+  background-color: #fff;
+  color: #2b2e83;
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  border: 1px solid #2b2e83;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.search-button:hover {
+  background-color: #f3f4f6;
+}
+
+/* Main content styling */
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1rem;
+  flex: 1;
+}
+
+/* Title */
+.title {
+  color: #2b2e83;
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+/* Branch list */
+.branches-list {
+  width: 100%;
+  max-width: 64rem; /* 1024px */
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+/* Branch item */
+.branch-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.75rem;
+  border: 1px solid #e6eaff;
+  background-color: #f6f8ff;
+  color: #2b2e83;
+}
+
+/* First branch has special border and background */
+.first-branch {
+  border-color: #2b2e83;
+  background-color: #ffffff;
+}
+
+/* Individual branch columns */
+.branch-id {
+  width: 4rem;
+  font-weight: 600;
+}
+
+.branch-name {
+  width: 33.3333%;
+  font-weight: 500;
+}
+
+.branch-address {
+  width: 33.3333%;
+}
+
+.branch-contact {
+  width: 25%;
+}

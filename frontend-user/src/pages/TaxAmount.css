@@ -1,0 +1,42 @@
+
+.tax-page {
+  min-height: 100vh;
+  background-color: white;
+  text-align: center;
+  padding: 5rem 1rem;
+}
+
+.tax-title {
+  font-size: 1.875rem; /* text-3xl */
+  font-weight: bold;
+  color: #2b2e83;
+  margin-bottom: 1.5rem;
+}
+
+.tax-subtitle {
+  color: #4b5563; /* Tailwind's text-gray-600 */
+}
+
+.tax-section-title {
+  font-size: 1.25rem; /* text-xl */
+  font-weight: 600;
+  color: #2563eb; /* Tailwind's text-blue-600 */
+  margin-bottom: 1.5rem;
+}
+
+.tax-box {
+  max-width: 28rem; /* max-w-md */
+  margin: 0 auto;
+  background-color: white;
+  border: 1px solid #d1d5db; /* Tailwind's border-gray-300 */
+  border-radius: 0.75rem; /* rounded-xl */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  height: 24rem; /* h-96 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tax-placeholder {
+  color: #6b7280; /* Tailwind's text-gray-500 */
+}

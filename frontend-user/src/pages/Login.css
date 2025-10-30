@@ -1,0 +1,75 @@
+/* src/components/Login.css */
+
+.login-page {
+  min-height: 100vh;
+  background-color: white;
+  text-align: center;
+  padding: 6rem 2rem; /* Increased padding */
+}
+
+.login-title {
+  font-size: 2.5rem; /* Larger than text-3xl */
+  font-weight: bold;
+  color: #2b2e83;
+  margin-bottom: 2rem;
+}
+
+.login-subtitle {
+  font-size: 1.25rem;
+  color: #4b5563;
+}
+
+.login-section-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #2563eb;
+  margin-bottom: 2rem;
+}
+
+.login-box {
+  max-width: 32rem; /* Slightly wider box */
+  margin: 0 auto;
+  background-color: white;
+  border: 1px solid #d1d5db;
+  border-radius: 1rem;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  padding: 2rem;
+}
+
+.login-input {
+  width: 95%;
+  font-size: 1rem;
+  padding: 0.75rem 1rem; /* Bigger inputs */
+  margin-bottom: 1.25rem;
+  border: 1px solid #bfdbfe;
+  border-radius: 0.5rem;
+  outline: none;
+  transition: box-shadow 0.2s ease;
+}
+
+.login-input:focus {
+  box-shadow: 0 0 0 3px #60a5fa;
+}
+
+.login-button {
+  width: 100%;
+  font-size: 1rem;
+  background-color: #2563eb;
+  color: white;
+  padding: 0.75rem 0;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.login-button:hover {
+  background-color: #1d4ed8;
+}
+
+.login-forgot {
+  margin-top: 1.25rem;
+  font-size: 1rem;
+  color: #3b82f6;
+  cursor: pointer;
+  text-decoration: underline;
+}
