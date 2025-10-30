@@ -1,0 +1,52 @@
+/* Center the cards container */
+.tax-cards-container {
+  display: flex;
+  justify-content: center;  /* center horizontally */
+  align-items: flex-start;  /* align cards top */
+  gap: 2rem;                /* space between cards */
+  min-height: 100vh;        /* take full screen height */
+  background: #f7f9fc;
+  padding: 2rem;
+
+  flex-wrap: nowrap;        /* ❌ prevent wrapping */
+}
+
+
+/* Individual card */
+.tax-card {
+  background: #ffffff; /* pure white */
+  border-radius: 20px;
+  border: 1px solid #e5e5e5;
+  padding: 2rem;
+  text-align: center;
+  width: 300px;       /* larger width */
+  min-height: 360px;  /* taller cards */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.tax-card:hover {
+  transform: translateY(-8px) scale(1.05);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+.tax-card h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffffff; /* darker text since bg is white */
+  margin-top: auto;
+  text-shadow: none;
+}
+
+
+
+

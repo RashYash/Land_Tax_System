@@ -1,0 +1,150 @@
+.tax-section {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  padding: 100px 60px;
+  color: #fff;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+}
+
+.tax-overlay {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  width: 100%;
+  backdrop-filter: blur(2px);
+}
+
+/* Left Side */
+.tax-left {
+  width: 50%;
+  margin-left: 65px;
+  
+}
+
+/* Apply gradient to h4 */
+.tax-left h4 {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  background: linear-gradient(90deg, #5A81FA, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  margin-top: 0px;
+  
+
+
+  
+}
+
+/* Underlined text inside h4 remains as-is */
+.underline {
+  text-decoration: underline;
+  color: inherit;
+}
+
+/* Apply gradient to h1 */
+.tax-left h1 {
+  font-size: 49px;
+  font-weight: 700;
+  margin: 10px 0 20px;
+  background: linear-gradient(90deg, #2C318C, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  margin-left: 40px;
+  margin-top: 30px;
+}
+
+.tax-left .highlight {
+  color: inherit; /* Or keep this if you'd like a different style */
+}
+
+.tax-left p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #ffffff;
+  margin-left: 40px;
+  margin-top: 30px;
+  text-align: justify;
+}
+
+
+/* Right Card */
+.tax-card {
+  width: 25%;
+  background-color: rgba(18, 18, 36, 0.8);
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 0 20px rgba(130, 130, 255, 0.15);
+  border: 1px solid #2d2d4d;
+  backdrop-filter: blur(12px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 140px;
+  margin-top: 30px;
+}
+
+.tax-card-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #5A81FA;
+  margin-bottom: 15px;
+  text-decoration: underline;
+  text-align: center;
+}
+
+.tax-card-video {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.tax-card-btn {
+  width: 50%;
+  padding: 12px 10px;
+  background: linear-gradient(to right, #5A81FA, #2C318C);
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  letter-spacing: 1px;
+  transition: 0.3s;
+}
+
+.tax-card-btn:hover {
+  background: linear-gradient(to right, #374fd0, #546bf5);
+  box-shadow: 0 0 10px #4e6cf2;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .tax-overlay {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tax-left,
+  .tax-card {
+    width: 100%;
+  }
+
+  .tax-left h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .tax-card {
+    margin-top: 30px;
+  }
+}

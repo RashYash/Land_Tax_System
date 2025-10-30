@@ -1,0 +1,44 @@
+.vision-wrapper {
+  background: linear-gradient(
+    90deg,
+    
+    #5A81FA 0%,     /* Dark Blue */
+    #2C318C 50%,    /* Medium Blue */
+    #171A46 100%    /* Light Blue */
+  );
+  padding: 20px 20px; /* Reduced height */
+  color: white;
+}
+
+.vision-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.vision-container h2 {
+  font-size: 30px;
+  font-weight: 800;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: #E4E4E4;
+}
+
+.divider {
+  width: 2px;
+  height: 80px; /* Optional: reduce height of divider too */
+  background-color: white;
+}
+
+.vision-container p {
+  max-width: 700px;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #E4E4E4;
+  text-align: justify;
+}
+
+

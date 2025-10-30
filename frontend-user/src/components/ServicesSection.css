@@ -1,0 +1,108 @@
+/* ✅ Wrapper to center everything and apply Poppins font */
+.services-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 80px 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* ✅ Grid layout for service cards */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-items: center;
+}
+
+/* ✅ Card design */
+.service-card {
+  background: linear-gradient(to bottom, #1e2a78, #000);
+  color: white;
+  width: 250px;
+  padding: 30px 20px;
+  border-radius: 16px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+/* ✅ Hover effect */
+.service-card:hover {
+  transform: translateY(-6px);
+}
+
+/* ✅ Link styling for image and heading */
+.service-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ✅ Image styling */
+.service-image {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 20%;
+  margin-bottom: 20px;
+  transition: transform 0.3s;
+}
+
+/* ✅ Heading styling */
+.service-heading {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  transition: color 0.3s;
+  color: #ffffff;
+  text-align:center;
+}
+
+/* ✅ Hover effect on image and heading */
+.service-link:hover .service-image {
+  transform: scale(1.05);
+}
+
+.service-link:hover .service-heading {
+  color: #88b4ff;
+}
+
+/* ✅ Description styling */
+.service-description {
+  font-size: 12px;
+  line-height: 1.5;
+  color: #ffffff;
+}
+
+/* ✅ Responsive: stack cards on smaller screens */
+@media (max-width: 900px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .service-card {
+    width: 90%;
+  }
+}
+
+.see-more-button {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 10px 20px;
+  background: linear-gradient(to right, #5A81FA, #2C318C);
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.see-more-button:hover {
+  background-color: #0056b3;
+}

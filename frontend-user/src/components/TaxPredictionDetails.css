@@ -1,0 +1,106 @@
+.tax-detail-section {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 60px 40px;
+  gap: 40px;
+  justify-content: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Left text content */
+.tax-detail-left {
+  flex: 1;
+  min-width: 300px;
+  max-width: 500px;
+  padding-left: 100px;
+}
+
+.tax-detail-left h2 {
+  font-size: 24px;
+  color: #2C318C;
+  margin-bottom: 20px;
+}
+
+.tax-detail-left p {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #181818;
+  text-align: justify;
+}
+
+.team-members {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.team-members img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #1e2a78;
+}
+
+/* Right image section */
+.tax-detail-right {
+  flex: 1;
+  min-width: 400px;        /* Increased width */
+  max-width: 650px;        /* Increased width */
+  background: #2C318C;     /* Deep blue */
+  border-radius: 0px;
+  padding: 24px;
+  display: flex;
+  align-items: flex-start; /* Align content to top */
+  justify-content: flex-start; /* Align content to left inside box */
+  margin-left: auto;       /* ✅ Push the box to the right side of the section */
+  height: 500px; 
+  margin-right: -40px;          /* ✅ Increase box height */
+}
+
+
+/* Grid with 4 images inside blue box */
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+ 
+}
+
+.image-grid img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  width: 250px;
+  height: 250px;
+}
+
+/* Image 1 — all corners rounded except top-left */
+.image-grid img:nth-child(1) {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+/* Image 2 — all corners rounded except top-right */
+.image-grid img:nth-child(2) {
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+/* Image 3 — all corners rounded except bottom-left */
+.image-grid img:nth-child(3) {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+/* Image 4 — all corners rounded except bottom-right */
+.image-grid img:nth-child(4) {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
